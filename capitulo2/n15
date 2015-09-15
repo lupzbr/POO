@@ -1,0 +1,17 @@
+package br.com.kyrios.poo.exercicio.capitulo2;
+
+import java.util.Scanner;
+
+public class n15 {    
+    public static void main(String [] args){
+        Scanner entrada = new Scanner(System.in);
+        int num1, num2;
+        System.out.println("Insira 2 numeros inteiros:");
+        num1 = entrada.nextInt();
+        num2 = entrada.nextInt();
+        System.out.printf("A soma dos numeros é: %d \n", (num1 + num2));
+        System.out.printf("O produto dos numeros é: %d \n", (num1 * num2));
+        System.out.printf("A diferença dos numeros é: %d \n", (num1 - num2));
+        System.out.printf("O conciente dos numeros é: %d \n", (num1 / num2));
+    }
+}
