@@ -1,0 +1,29 @@
+package br.com.kyrios.poo.exercicio.capitulo2;
+import java.util.Scanner;
+public class n17 {
+    public static void main(String []args){
+        Scanner entrada = new Scanner(System.in);
+        int num1, num2, num3;
+        System.out.println("Insira 3 numeros inteiros:");
+        num1 = entrada.nextInt();
+        num2 = entrada.nextInt();
+        num3 = entrada.nextInt();
+        System.out.printf("A soma dos numeros é: %d \n", (num1 + num2 + num3));
+        System.out.printf("A media dos numeros é: %d \n", ((num1 + num2 + num3)/3));
+        System.out.printf("O produto dos numeros é: %d \n", (num1 * num2 * num3));
+        if (num1 > num2 && num1 > num3){
+            System.out.printf("O maior numero é: %d \n", num1);
+        }else if(num2 > num3 && num2 > num1){
+            System.out.printf("O maior numero é: %d \n", num2);
+        }else if(num3 > num1 && num3 > num2){
+            System.out.printf("O maior numero é: %d \n", num3);
+        }
+        if (num1 < num2 && num1 < num3){
+            System.out.printf("O menor numero é: %d \n", num1);
+        }else if(num2 < num3 && num2 < num1){
+            System.out.printf("O menor numero é: %d \n", num2);
+        }else if(num3 < num1 && num3 < num2){
+            System.out.printf("O menor numero é: %d \n", num3);
+        }
+    }
+}
